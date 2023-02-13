@@ -1,9 +1,15 @@
 body{
-    background-color:#eae6e5;
-    overflow:hidden;
+    background-color:#e0d8d6;
     top:0px;
     margin: 0px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+body::-webkit-scrollbar {
+    opacity:0;
+    display: none;
+  }
 
 main{ 
     display:flex; 
@@ -47,6 +53,7 @@ nav h1{
 }
 
 .tutorials{
+    height:730px;
     margin: 10px;
     width:auto;
     background-color:#5b9279;
@@ -226,6 +233,5 @@ nav h1{
 .pblock a:hover{ 
     color:black;
 }
-
 
 
