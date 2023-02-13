@@ -1,0 +1,219 @@
+body{
+    font-family:"Albert Sans";
+    background-color:rgb(228, 222, 213);
+    margin:0px;
+}
+main{ 
+    margin:0px;
+    display:flex;
+    flex-direction:row;
+    padding-top:12vh;
+}
+nav{ 
+    top:0px;    
+    background-color:white; 
+    height: 12vh; 
+    width:100%; 
+
+    display:flex; 
+    align-items:center; 
+    flex-direction: row;
+    justify-content: space-between;
+    positioN:fixed;
+}
+nav h1{ 
+    margin-left:20px; 
+}
+nav ul{ 
+    list-style: none; 
+    padding: 2%;
+
+    display: flex; 
+    flex-direction:row;
+    align-items:center;
+}
+
+nav ul li{ 
+    padding: 5px; 
+}
+.feed{ 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:15px; 
+    width: 70vw;
+}
+
+.feed .stories{
+    display:flex;
+    background-color:white;
+    width: 85%;
+    height:18%;
+    margin-bottom:5px;
+
+    justify-content:left;
+    align-items:center;
+}
+.feed .stories ul{
+    padding-left:5px; 
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+
+}
+
+.stories ul li{ 
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+    flex-direction:column;
+}
+.stories ul li p{ 
+    font-size:7pt;
+}
+
+.stories ul li img{ 
+    margin:5px;
+    margin-right:10px;
+    border-radius:50%;
+    border:solid 4px rgb(210, 210, 210);
+}
+
+.feed .posts{
+    background-color:white;
+    width:85%;
+
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.posts .post .intbar {
+    padding:10px;
+    display:flex; 
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.posts .header { 
+    align-items:center;
+    display:flex; 
+    justify-content:space-between;
+    font-size:14px;
+}
+.posts .header h1{ 
+    padding-left:10px;
+}
+
+.post strong{
+    padding-left:5px;
+    padding-bottom:5px;
+    font-size: 12pt;
+}
+
+.posts .post .description p{ 
+    margin:0px;
+    padding-top:2px;
+
+}
+
+.posts .post .description a{ 
+    color:blue; 
+    padding-left:5px;
+}
+.posts .header i{
+    padding-right:10px;
+}
+
+.posts .post img{ 
+    width:100%;
+    height:350px;
+    
+}
+
+.posts .post .comment p{ 
+    margin:0px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+#timestamp{
+    font-size:12pt;
+    color:gray;
+}
+
+.posts .post .mycomment{ 
+
+display:flex; 
+flex-direction:row;
+justify-content:space-around;
+align-items:center;
+}
+
+.mycomment p{ 
+    width:80%
+}
+.mycomment a{ 
+    color:blue;
+}
+
+.reccomendations{
+    position:fixed;
+    right:10vw;
+    display:flex; 
+    flex-direction:column;
+    padding-top:15px;
+    height:50vh;
+    width:auto;
+}
+
+.user{
+    display:flex; 
+    flex-direction:row;
+    align-items:center;
+}
+
+.user img{ 
+    margin-left:0;
+    border-radius:50%;
+    
+}
+.user h2{ 
+    font-size:18pt;
+    padding-left:30px;
+}
+
+.suggestion{ 
+    display:flex; 
+    flex-direction:row;
+    
+    align-items:center;
+    height:60px;
+}
+
+.suggestion .text{ 
+    width:60%;
+}
+.text strong{ 
+    font-size:small;
+}
+.text p{
+    color:gray;
+    font-size:smaller;
+    margin:0px;
+}
+
+.suggestion a{
+    font-size:smaller; 
+    color:blue;
+
+}
+
+.suggestion img{ 
+    margin-right:10px;
+    border-radius:50%;
+}
+
+.suggestions h2{ 
+    font-size:12pt;
+    color:gray;
+}
