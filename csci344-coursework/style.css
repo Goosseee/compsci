@@ -37,6 +37,9 @@ nav a{
     margin-top:10%;
 }
 
+nav a:hover{ 
+    color:#5b9279
+}
 nav h1{ 
     font-family: "Oswald";
     background: -webkit-linear-gradient(#5b9279, #8fcb9b,#ffb480, #fec98f );
@@ -45,7 +48,6 @@ nav h1{
   
     margin-bottom:20%;
 }
-
 .tutorials h2{ 
     font-family: "Roboto Mono";
     color:white;
@@ -53,7 +55,6 @@ nav h1{
 }
 
 .tutorials{
-    height:730px;
     margin: 10px;
     width:auto;
     background-color:#5b9279;
@@ -73,7 +74,7 @@ nav h1{
     /* border:solid 1px black; */
 
     transition-property:all;
-    transition: .25s ease-in;
+    transition: .25s ease-in-out;
 
 }
 
@@ -136,7 +137,7 @@ nav h1{
     height:60px;
 
     transition-property:all;
-    transition: .25s ease-in;
+    transition: .25s ease-in-out;
 
 }
 .hblock h3{ 
@@ -212,6 +213,8 @@ nav h1{
     color:white;
     text-decoration:none;
     list-style:none; 
+    transition:.25s;
+
 }
 
 .pblock:hover{ 
