@@ -37,8 +37,8 @@ template = `<section class="track-item preview" onClick="playSong('${data[i].id}
 
 document.querySelector("#tracks").insertAdjacentHTML('beforeend',template);
 }
-};
 
+};
 function playSong(id){
 
 
@@ -102,7 +102,6 @@ async function getArtist (term) {
     </section>
     `
     document.querySelector('#artist').innerHTML = template;
- 
 }
 
     //print to console the first artis's name 

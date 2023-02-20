@@ -72,10 +72,12 @@ const dataToHTML = course => {
 
     //Checks the status of the class and displays the information in the course block.
     if (course.Classification.Open == true){ 
-        icon = '<i class="fa-solid fa-circle-check"></i> Open';
+        icon = '<i class="fa-solid fa-circle-check"></i>';
+        ifOpen = 'Open';
         seats = course.EnrollmentMax - course.EnrollmentCurrent;
-    }else {icon = '<i class="fa-solid fa-circle-xmark"></i> Closed';
+    }else {icon = '<i class="fa-solid fa-circle-xmark"></i>';
         seats = 0;
+        ifOpen = 'Closed';
     }
 
 
@@ -85,7 +87,7 @@ const dataToHTML = course => {
     <h2>${course.Code}: ${course.Title}</h2>
     <p>
         ${icon}
-      &bull; ${course.CRN} &bull; Seats Available: ${seats}
+        ${ifOpen}  &bull; ${course.CRN} &bull; Seats Available: ${seats}
     </p>
     <p>
         ${course.Days} &bull; ${course.Location.FullLocation} &bull; ${course.Hours} credit hour(s)
